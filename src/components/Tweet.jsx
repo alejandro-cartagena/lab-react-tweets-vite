@@ -8,23 +8,32 @@ import Actions from "./Actions";
 
 function Tweet({ tweet }) {
 
+  const {
+    user: {
+      name,
+      image,
+      handle
+    },
+    timestamp,
+    message
+  } = tweet
 
   return (
     <div className="tweet">
       
-      <ProfileImage tweet={tweet}/>
+      <ProfileImage image={image}/>
 
       <div className="body">
         <div className="top">
           
-          <User tweet={tweet}/>
+          <User name={name} handle={handle}/>
 
-          <Timestamp tweet={tweet}/>
+          <Timestamp timestamp={timestamp}/>
 
         </div>
 
         {/*  */}
-        <Message tweet={tweet}/>
+        <Message message={message}/>
         <Actions/>
       </div>
 

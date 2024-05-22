@@ -1,5 +1,5 @@
-export default function Message({tweet}) {
+export default function Message({message}) {
     return (
-        <><p className="message">{tweet.message}</p></>
+        <><p className="message">{message}</p></>
     )
 }

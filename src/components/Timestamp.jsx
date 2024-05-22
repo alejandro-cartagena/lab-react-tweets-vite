@@ -1,6 +1,6 @@
-export default function Timestamp({tweet}) {
+export default function Timestamp({timestamp}) {
     return (
-        <><span className="timestamp">{tweet.timestamp}</span> </>
+        <><span className="timestamp">{timestamp}</span> </>
         
     )
 }
